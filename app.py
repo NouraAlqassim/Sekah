@@ -39,9 +39,28 @@ def main():
     )
 
     app_mode = st.sidebar.selectbox('The pages', ['About Sekah', 'Try the model'])
+    if app_mode =='About Sekah':
+        st.markdown('Visual pollution detection model that detects defective sidewalk & speed bumps, potholes, garbage, and jersey barrier gaps in construction road.')
+        st.markdown (
+            """
+            <style>
+            [data-testid="stSidebar"][arta-expanded-"true"] > div:first-child {
+                width: 300px;
+            }
+            [data-testid="stSidebar"][aria-expanded-"true"] > div:first-child {
+                width: 300px;
+                margin-left: -300px;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
 
+        )
+          
 if __name__ == '__main__':
     try:
         main()
     except SystemExit:
         pass
+
+
