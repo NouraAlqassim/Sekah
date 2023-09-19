@@ -37,7 +37,9 @@ def main():
     unsafe_allow_html=True
 
  )
-    
+
+app_mode = st.sidebar.selectbox('The pages', ['About Sekah', 'Try the model'])
+
 if __name__ == '__main__':
     try:
         main()
