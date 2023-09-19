@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import torch
-import math
 from super_gradients.training import Trainer as super_gradients_Trainer
 from super_gradients.training import dataloaders
 from super_gradients.training.dataloaders.dataloaders import (
@@ -56,6 +55,26 @@ def main():
 
         )
 
+def predict_and_save_image(input_path):
+    model = models.get(
+        model_name='yolo_nas_s',
+        checkpoint_path='ckpt_best.pth',
+        num_classes=5
+    )
+    os.makedirs('inference_results/images', exist_ok=True)
+    
+    # Load a single image
+    image = cv2.imread(input_path)
+    
+    # Predict on the image
+    out = model.predict(image)
+    
+    # Save the prediction output image
+    output_path = 'inference_results/images/prediction.jpg'
+    out.save(output_path)
+    
+    # Display the saved image
+    display_images(output_path)
         
 
         
