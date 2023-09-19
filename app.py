@@ -17,3 +17,6 @@ from super_gradients.training.metrics import (
 )
 from super_gradients.training.models.detection_models.pp_yolo_e import PPYoloEPostPredictionCallback
 
+st.title("Sekah")
+
+st.write("Hello World")
