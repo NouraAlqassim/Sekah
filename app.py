@@ -3,7 +3,7 @@ import numpy as np
 
 
 
-from super_gradients.training import Trainer
+from super_gradients.training import Trainer as super_gradients_Trainer
 from super_gradients.training import dataloaders
 from super_gradients.training.dataloaders.dataloaders import (
     coco_detection_yolo_format_train,
