@@ -17,6 +17,25 @@ from super_gradients.training.metrics import (
 )
 from super_gradients.training.models.detection_models.pp_yolo_e import PPYoloEPostPredictionCallback
 
-st.title("Sekah")
 
-st.write("Hello World")
+def main():
+    st.title("Sekah")
+    st.sidebar.title ("Settings")
+    st.sidebar.subheader ("Parameters")
+    st.markdown (
+    """
+    <style>
+    [data-testid="stSidebar"][arta-expanded-"true"] > div:first-child {
+    width: 300px;
+    }
+    [data-testid="stSidebar"][aria-expanded-"true"] > div:first-child {
+    width: 300px;
+    margin-left: -300px;
+    }
+    </style>
+    """
+if __name__ == '__main__':
+    try:
+        main()
+    except SystemExit:
+        pass
