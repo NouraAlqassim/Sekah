@@ -36,7 +36,7 @@ def load_image():
 def load_model():
     mymodel = models.get(
     model_name='yolo_nas_s',
-    checkpoint_path='/content/drive/MyDrive/ckpt_best.pth',
+    checkpoint_path='ckpt_best.pth',
     num_classes=5
     )
     return mymodel
