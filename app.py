@@ -4,7 +4,6 @@ import io
 from PIL import Image
 import pathlib
 import cv2
-from opyv8 import Predictor
 import pathlib
 from io import BytesIO
 
