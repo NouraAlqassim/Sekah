@@ -16,3 +16,6 @@ The data set was obtained from Roboflow
 - We performed data cleaning to remove duplicate images in both training and testing sets.
 - Also we made modifications to some of the classes to make it more clear.
 
+# The model
+We fine-tuned YOLO-NAS pretrained model and modified some of its augmentation techniques to make it more suitable for out project requirement.
+
