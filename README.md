@@ -10,6 +10,7 @@ Visual pollution detection model that detects defective sidewalk & speed bumps, 
 
 # Dataset
 The data set was obtained from Roboflow
+
 **the link:** https://universe.roboflow.com/visual-pollution-056la/visual-pollution-pc2as/browse?queryText=&pageSize=50&startingIndex=0&browseQuery=true
 
 - we performed data cleaning to remove duplicate images in both training and testing sets.
