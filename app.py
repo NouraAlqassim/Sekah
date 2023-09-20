@@ -49,10 +49,6 @@ def predict(predictor, image):
 
     prediction = predictor.predict(image)
 
-    # Check the number of bounding boxes
-    num_boxes = len(prediction.labels)
-    print("Number of bounding boxes:", num_boxes)
-
     # Convert PIL image to OpenCV format (BGR)
     image_cv = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
 
@@ -72,7 +68,7 @@ def predict(predictor, image):
 
 def main():
     # Streamlit app code
-    st.markdown("<h2 style='text-align: center;'>Model Demo</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Sekah</h2>", unsafe_allow_html=True)
 
     model = load_model()
 
