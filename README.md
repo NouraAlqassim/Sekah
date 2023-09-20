@@ -1,4 +1,4 @@
-![alt text](https://github.com/NouraAlqassim/Sekah/blob/main/images/logo.png?raw=true)
+(https://github.com/NouraAlqassim/Sekah/blob/main/images/logo.png?raw=true)
 # Sekah
 Visual pollution detection model that detects defective sidewalk & speed bumps, pothole, garbage, and Jersey barrier gaps to prevent animals and children from falling in construction ereas.
 
