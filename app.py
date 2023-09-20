@@ -68,7 +68,8 @@ def predict(predictor, image):
 
 def main():
     # Streamlit app code
-    st.markdown("<h2 style='text-align: center;'>Sekah</h2>", unsafe_allow_html=True)
+    st.title("Sekah")
+    st.markdown("<h6 style='text-align: Right;'>Visual pollution detection model that detects defective sidewalk & speed bumps, pothole, garbage, and Jersey barrier gaps in construction road.</h6>", unsafe_allow_html=True)
 
     model = load_model()
 
